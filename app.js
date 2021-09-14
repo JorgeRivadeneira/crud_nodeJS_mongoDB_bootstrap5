@@ -14,9 +14,10 @@ app.use(express.json());
 app.use(express.static('public'));
 app.use(alumnos);
 
-app.get('/', (req, res, next) => {
-    res.send('Hola Mundo');
-});
+// app.get('/', (req, res, next) => {
+//     console.log('Hello from HOME get METHOD');
+//     res.send('Hola Mundo');
+// });
 
 app.listen(3000, () => {
     console.log('Server up in: localhost:3000');

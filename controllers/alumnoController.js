@@ -2,7 +2,7 @@ const Alumno = require('../models/Alumno');
 
 //Mostrar
 module.exports.mostrar = (req, res, next) => {
-    console.log('...Hello from controller.');
+    console.log('...Hello from HOME controller.');
     Alumno.find({}, (error, alumnos) => {
         if(error){
             return res.status(500).json({
